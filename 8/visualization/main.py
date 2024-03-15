@@ -1,6 +1,6 @@
 import csv
 
-with open('../clusterized.csv', 'r') as file:
+with open('../clusterized_grayscale.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
     colors = [row for row in csv_reader]
 
@@ -34,5 +34,5 @@ html += """
 </html>
 """
 
-with open('visualization.html', 'w') as file:
+with open('grayscale_visualization.html', 'w') as file:
     file.write(html)
